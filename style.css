@@ -1,0 +1,184 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+
+}
+
+.wine{
+  width: 100%;
+  height: 60%;
+  display: flex;
+}
+.wineImg{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wineInfo{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.wineInfo p{
+  width: 80%;
+  background-color: transparent;
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.image {
+  flex: 1;
+  max-width: 40%;
+  padding: 10px;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.content {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content p{
+  width: 90%;
+  text-align: center;
+}
+
+/* Adjust for responsiveness */
+@media (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+    background-image: url('https://cdn.britannica.com/71/192771-131-00E5AA76/Glass-scotch-whiskey-ice.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+  }
+
+  .container1{
+    flex-wrap: wrap;
+    background-image: url('https://static.toiimg.com/thumb/73844123.cms?width=680&height=512&imgsize=1705451');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+  }
+  .container2{
+    flex-wrap: wrap;
+    background-image: url('https://cf.ltkcdn.net/wine/images/std/306504-800x533-wine-facts.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+  }
+  .content{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.523);
+  }
+  .image {
+    flex: none;
+    max-width: 100%;
+    display: none;
+  }
+}
+
+.products {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+.card {
+  width: 25rem;
+  height: 10rem;
+  margin-bottom: 2rem;
+  transition: .5s;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card:hover #cardPrice {
+  /* display: none; */
+}
+
+.card:hover h6 {
+  display: none;
+}
+
+.card:hover {
+  box-shadow: 1px 1px 10px rgb(76, 76, 76);
+}
+
+.card-body h6 {
+  /* margin-top: -1vmax; */
+  font-size: 1vmax;
+  color: black;
+  font-weight: 600;
+  /* margin-bottom: -.4vmax; */
+}
+
+.card-body span {
+  font-size: 1vmax;
+  font-weight: 500;
+}
+
+.card-body p {
+  /* margin-top: -.5vmax; */
+  font-weight: 700;
+  font-size: 1.3vmax;
+  color: #ff8a33;
+  margin-bottom: 0;
+}
+
+.card-body button {
+  display: none;
+}
+
+.card:hover button {
+  display: initial;
+  transform: translateY(-10px);
+}
+
+.card:hover p {
+  font-size: 1.5vmax;
+  transform: translateY(-8px);
+  color: orange;
+}
+
+
+@media (max-width: 700px) {
+  #cardH1 {
+      font-size: 12px;
+      margin-top: -20px;
+  }
+
+  .card-body span{
+    font-size: 1.3vmax;
+  }
+
+  #cardPrice {
+      font-size: 15px;
+  }
+
+}
